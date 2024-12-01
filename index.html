@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="msg-sent">
+        <span class="msg__title">
+          <img
+            src="./assets/images/icon-success-check.svg"
+            alt="check mark"
+          />
+          Message Sent!
+        </span>
+        Thanks for completing the form. We'll be in touch
+        soon!
+      </div>
+      <h1 class="container__title">Contact Us</h1>
+      <form action="#" class="container__body">
+        <div class="wrapper name">
+          <div class="container__input-box fname">
+            <label for="fname">
+              First Name
+              <span class="star">*</span>
+            </label>
+            <input type="text" name="fname" id="fname" />
+            <span class="error">
+              This field is required
+            </span>
+          </div>
+          <div class="container__input-box lname">
+            <label for="lname">
+              Last Name
+              <span class="star">*</span>
+            </label>
+            <input type="text" name="lname" id="lname" />
+            <span class="error">
+              This field is required
+            </span>
+          </div>
+        </div>
+        <div class="container__input-box email">
+          <label for="email">
+            Email Address
+            <span class="star">*</span>
+          </label>
+          <input type="email" name="email" id="email" />
+          <span class="error">
+            Please enter a valid email address
+          </span>
+        </div>
+        <div class="container__query">
+          <div class="wrapper__title">
+            Query Type
+            <span class="star">*</span>
+          </div>
+          <div class="wrapper query">
+            <div class="container__input-box general">
+              <input
+                type="radio"
+                name="query"
+                id="general"
+              />
+              <label for="general">General Enquiry</label>
+              <span class="error">
+                Please select a query type
+              </span>
+            </div>
+            <div class="container__input-box support">
+              <input
+                type="radio"
+                name="query"
+                id="support"
+              />
+              <label for="support">Support Request</label>
+            </div>
+          </div>
+        </div>
+        <div class="container__input-box msg">
+          <label for="msg">
+            Message
+            <span class="star">*</span>
+          </label>
+          <textarea name="msg" id="msg"></textarea>
+          <span class="error">This field is required</span>
+        </div>
+        <div class="container__input-box consent">
+          <input
+            type="checkbox"
+            name="consent"
+            id="consent"
+          />
+          <label for="consent">
+            I consent to being contacted by the team
+            <span class="star">*</span>
+          </label>
+          <span class="error">
+            To submit this form, please consent to being
+            contacted Submit
+          </span>
+        </div>
+        <div class="container__input-box submit">
+          <input
+            type="button"
+            name=""
+            id=""
+            value="Submit"
+          />
+        </div>
+      </form>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>
